@@ -5,17 +5,19 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 
 
 export default function App() {
-  const [location, setLocation] = useState({display_name: "info about ???"})
+  const [location, setLocation] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
 
   async function getLocation() {
-    const API = `https://us1.locationiq.com/v1/search.php?key=${API_KEY}&q=${searchQuery}&format=json`
+    const API=`https://us1.locationiq.com/v1/search.php?key=${API_KEY}&q=${searchQuery}&format=json`
     const response = await axios.get(API);
-    console.log(response)
-
+    console.log(response);
+    const locationObj = response.data[0];
+    setLocation(locationObj);
   }
 
   function updateQuery(event) {
+    console.log(event.target.value);
     setSearchQuery(event.target.value)
   }
 
