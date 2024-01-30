@@ -4,7 +4,11 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-Geolocation is a map locator that displays any city in the world. 
+
+Geolocation is a map locator that displays any city in the world.
+
+LIghthouse Report:
+![lighthouse](./public/Images/lighthouse.png)
 
 ## Getting Started
 
@@ -46,3 +50,5 @@ React
 
 
 ## Credit and Collaborations
+
+Tammy Do and Brandon Mizutani
