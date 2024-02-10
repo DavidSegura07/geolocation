@@ -42,6 +42,16 @@ Finish time: 7pm
 
 Actual time needed to complete: 30 mins
 
+Name of feature: Front-end
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 12:30
+
+Finish time: 3:45
+
+Actual time needed to complete: 3 hours 15 mins
+
 ## Architecture
 
 CSS
