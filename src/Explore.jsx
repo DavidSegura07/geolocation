@@ -48,7 +48,7 @@ export default function Explore() {
   async function getWeather(lat, lon) {
     const url = `${SERVER_URL}/weather?searchQuery=${searchQuery}&lat=${lat}&lon=${lon}`;
     // console.log('url', url);
-    const response = await axios.get(`${url}/weather?searchQuery=${searchQuery}&lat=${lat}&lon=${lon}`);
+    const response = await axios.get(url);
     
     // console.log('response', response);
     setWeather(response.data);
